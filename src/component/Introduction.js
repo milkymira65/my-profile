@@ -11,7 +11,7 @@ function Introduction() {
       </p>
       
       <img
-        className=" rounded-full  m-10 md:w-[30%] w-[13%] h-[20%] md:mb-10 mt-10 "
+        className=" rounded-full  m-10 md:w-[35%] w-[20%] h-[20%] md:mb-10  "
         src={myImage}
         alt="profile"
       />
