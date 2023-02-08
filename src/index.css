@@ -11,3 +11,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@500&family=Tangerine&display=swap');
+.milk{
+  font-family: 'Tangerine', cursive;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display&family=Roboto:wght@500&family=Tangerine&display=swap');
+.profile{
+  font-family: 'Playfair Display', serif;
+  text-indent: 50px;
+}

@@ -1,18 +1,15 @@
-import Navbar from './component/Navbar';
-import Introduction from './component/Introduction';
-import Aboutme from './component/Aboutme';
-import Contactme from './component/Contactme';
-import './App.css';
+import * as React from 'react'
+import { ChakraProvider } from '@chakra-ui/react'
+import HomPage from './component/Homepage'
+
 
 function App() {
+  // 2. Wrap ChakraProvider at the root of your app
   return (
-    <div className="App">
-        <Navbar />
-        <Introduction />
-        <Aboutme />
-        <Contactme />
-    </div>
-  );
+    <ChakraProvider>
+      <HomPage />
+    </ChakraProvider>
+  )
 }
 
 export default App;
