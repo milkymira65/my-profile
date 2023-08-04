@@ -1,24 +1,73 @@
-// import myImage from "../img/myImage.jpg";
+import myImage from "../img/myImage.jpg";
+import { Box, Image, Flex, Text, Center } from "@chakra-ui/react";
+import CaptionCarousel from "../child-element/picter-educaation";
+import { Grid, GridItem } from "@chakra-ui/react";
 
+function Education() {
+  return (
+    <Flex justify="center" w="100vw" mt="3%">
+      <Flex
+        w="80%"
+        h={[600, 550, 650]}
+        shadow="xl"
+        borderRadius="50px"
+        position="absolute"
+        top={[1200]}
+        bg="rgba(217, 220, 225, 0.4)"
+      >
+        {/* <Box
+          // ml="40%"
+          mt="5%"
+          className="profile"
+          fontSize={[1, 10, 15, 18, 25]}
+          fontWeight="extrabold"
+          color="#735F32"
+        >
+          Education
+        </Box> */}
 
-// function Introduction() {
-//   return (
-//     <div className=" Aboutme flex flex-row  justify-evenly items-center">
-//       <p className=" m-10 text-indigo-900 text-[30px] md:w-[56%] w-[30%] h-[30%]  ">
-//         Hi! I'm Ornnutcha Tawana Software developer . I can coding with a clean
-//         and beautiful problem soving in mind . I am constantly improving myself and never stop learning new things.I have excellent adaptation and high flexibility in different environments.The journey of a thousand miles
-//         begins with one step.
-//       </p>
-      
-//       <img
-//         className=" rounded-full  m-10 md:w-[35%] w-[20%] h-[20%] md:mb-10  "
-//         src={myImage}
-//         alt="profile"
-//       />
+        {/* <CaptionCarousel /> */}
+        <Center>
+          <Grid
+            templateAreas={`"header header"
+                  "main main"
+                  `}
+            // gridTemplateRows={"10px 1fr 5px"}
+            gridTemplateRows="20px"
+            gridTemplateColumns={"50px 1fr"}
+            // gridTemplateColumns="20px"
+            h="75%"
+            // gap="1"
+            // ml="30%"
+            // color="blackAlpha.700"
+            // fontWeight="bold"
+          >
+            <GridItem
+              // pl="2"
+              // bg="orange.300"
+              area={"header"}
+              ml="40%"
+              mt="-5%"
+              className="profile"
+              fontSize={[1, 10, 15, 18, 25]}
+              fontWeight="extrabold"
+              color="#735F32"
+            >
+              Education
+            </GridItem>
 
-//       <button className=""></button>
-//     </div>
-//   );
-// }
+            <GridItem
+              // bg="green.300"
+              area={"main"}
+              h="60%"
+            >
+              <CaptionCarousel />
+            </GridItem>
+          </Grid>
+        </Center>
+      </Flex>
+    </Flex>
+  );
+}
 
-// export default Introduction;
+export default Education;
