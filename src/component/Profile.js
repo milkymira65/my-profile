@@ -24,7 +24,7 @@ export default function Profile() {
 
       <Flex
         w="80%"
-        h={[600, 550, 650]}
+        h={[300, 400, 550, 650]}
         shadow="xl"
         borderRadius="50px"
         direction={["column", "column", "row", "row"]}

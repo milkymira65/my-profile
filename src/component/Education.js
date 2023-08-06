@@ -1,6 +1,6 @@
 import myImage from "../img/myImage.jpg";
 import { Box, Image, Flex, Text, Center } from "@chakra-ui/react";
-import CaptionCarousel from "../child-element/picter-educaation";
+
 import { Grid, GridItem } from "@chakra-ui/react";
 
 function Education() {
@@ -8,63 +8,50 @@ function Education() {
     <Flex justify="center" w="100vw" mt="3%">
       <Flex
         w="80%"
-        h={[600, 550, 650]}
+        h={[300, 400, 500, 800]}
         shadow="xl"
         borderRadius="50px"
         position="absolute"
-        top={[1200]}
+        top={[500, 600, 1000, 1200]}
         bg="rgba(217, 220, 225, 0.4)"
       >
-        {/* <Box
-          // ml="40%"
-          mt="5%"
-          className="profile"
-          fontSize={[1, 10, 15, 18, 25]}
-          fontWeight="extrabold"
-          color="#735F32"
-        >
-          Education
-        </Box> */}
-
-        {/* <CaptionCarousel /> */}
-        <Center>
+        {/* <Center>
           <Grid
             templateAreas={`"header header"
-                  "main main"
-                  `}
-            // gridTemplateRows={"10px 1fr 5px"}
-            gridTemplateRows="20px"
-            gridTemplateColumns={"50px 1fr"}
-            // gridTemplateColumns="20px"
-            h="75%"
-            // gap="1"
-            // ml="30%"
+                  "nav main"
+                  "nav footer"`}
+            gridTemplateRows={"30px 1fr 20px"}
+            gridTemplateColumns={[420, 500, 630, 1035]}
+            h={[150, 200, 300, 400, 500]}
+            gap="1"
             // color="blackAlpha.700"
-            // fontWeight="bold"
+            fontWeight="bold"
           >
-            <GridItem
-              // pl="2"
-              // bg="orange.300"
-              area={"header"}
-              ml="40%"
-              mt="-5%"
+            <Center
+              // ml="-10%"
               className="profile"
               fontSize={[1, 10, 15, 18, 25]}
               fontWeight="extrabold"
               color="#735F32"
             >
-              Education
-            </GridItem>
+              <GridItem
+                // pl="2"
+                bg="orange.300"
+                area={"header"}
+                // ml={10}
+              >
+                Software Developer
+              </GridItem>
+            </Center>
 
             <GridItem
-              // bg="green.300"
-              area={"main"}
-              h="60%"
-            >
-              <CaptionCarousel />
-            </GridItem>
-          </Grid>
-        </Center>
+              //  ml={5}
+              pl="2"
+              bg="pink.300"
+              area={"nav"}
+            ></GridItem>
+          </Grid> */}
+        {/* </Center> */}
       </Flex>
     </Flex>
   );
