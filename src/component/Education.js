@@ -8,7 +8,7 @@ function Education() {
     <Flex justify="center" w="100vw" mt="3%">
       <Flex
         w="80%"
-        h={[300, 400, 500, 800]}
+        h={[200, 300, 400, 500, 600, 800]}
         shadow="xl"
         borderRadius="50px"
         position="absolute"
