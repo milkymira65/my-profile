@@ -36,10 +36,10 @@ import {
 } from "@chakra-ui/react";
 import { FaCheckCircle } from "react-icons/fa";
 
-export function PayMentCard() {
+export function EducationInsite() {
   // const ServerQuickActions = () => {
   return (
-    <Box w="100%" h="500px" bg="rgba(217, 220, 225, 0.4)">
+    <Box w="100%" h="500px">
       <Flex justifyContent="center" mt={4}>
         <Popover placement="bottom" isLazy>
           <PopoverTrigger>
@@ -109,8 +109,8 @@ export function PayMentCard() {
                       <Box py={4} px={12}>
                         <HStack justifyContent="center">
                           <Image
-                            w="300px"
-                            h="300px"
+                            w="400px"
+                            h="350px"
                             src="picture/techup.png"
                             alt="techup"
                           ></Image>
@@ -139,11 +139,13 @@ export function PayMentCard() {
                   <TabPanel>
                     {/* You can add your content here. */}
                     <Box>
-                      <Box py={4} px={12}>
+                      <Box
+                      //    py={4} px={12}
+                      >
                         <HStack justifyContent="center">
                           <Image
-                            w="300px"
-                            h="300px"
+                            w="700px"
+                            h="400px"
                             src="picture/majeo.png"
                             alt="education"
                           ></Image>

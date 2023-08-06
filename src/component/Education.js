@@ -1,7 +1,7 @@
 // import myImage from "../img/myImage.jpg";
 import { Box, Image, Flex, Text, Center } from "@chakra-ui/react";
 import { Grid, GridItem } from "@chakra-ui/react";
-import { PayMentCard } from "../child-element/pigture-inedducation";
+import { EducationInsite } from "../child-element/pigture-inedducation";
 
 function Education() {
   return (
@@ -53,7 +53,7 @@ function Education() {
           </Grid> */}
         {/* </Center> */}
 
-        <PayMentCard />
+        <EducationInsite />
       </Flex>
     </Flex>
   );
