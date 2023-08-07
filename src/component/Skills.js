@@ -6,32 +6,33 @@ export default function Skills() {
     <Flex justify="center" w="100vw" mt="3%" h="100vw">
       <Center>
         <Image
-          mt={[150, 200, 300]}
-          w={[400, 600, 800, 1000, 1100]}
+          mt="2%"
+          w={[400, 600, 800, 1000, 1150]}
           src="picture/bgskill.png"
           shadow="xl"
           borderRadius="50px"
         />
+
         <Flex
-          w="80%"
-          h={[400, 500]}
+          w={[700, 800, 1000]}
+          h={[200, 300, 400, 500, 600]}
           shadow="xl"
           borderRadius="50px"
           position="absolute"
-          top={[1000, 1500, 1800, 2250, 2300]}
-          bg="rgba(217, 220, 225, 0.7)"
+          top={[900, 1000, 2200, 2250, 2300, 2400, 2500]}
+          bg="rgba(217, 220, 225, 0.4)"
         >
           <GridBlurredBackdrop />
         </Flex>
 
         <Flex
-          w="80%"
-          h={[400, 500]}
+          w={[700, 800, 1000]}
+          h={[200, 300, 400, 500, 600]}
           shadow="xl"
           borderRadius="50px"
           position="absolute"
-          top={[2200, 2800, 2900]}
-          bg="rgba(217, 220, 225, 0.7)"
+          top={[2900, 3000, 3100]}
+          bg="rgba(217, 220, 225, 0.4)"
         >
           <Box
             // py={[5, 10, 20]}

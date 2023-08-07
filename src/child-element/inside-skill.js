@@ -90,7 +90,7 @@ function TestimonialCard(props) {
         <chakra.div
           fontFamily={"Inter"}
           fontWeight={"medium"}
-          fontSize={"15px"}
+          fontSize={"20px"}
           // pb={5}
         >
           {content}
@@ -142,17 +142,6 @@ export default function GridBlurredBackdrop() {
           <TestimonialCard key={index} {...cardInfo} index={index} />
         ))}
       </SimpleGrid>
-      {/* <Box>
-        <chakra.h3
-          py={[5, 10, 20, 30, 40]}
-          fontSize={30}
-          fontFamily={"Work Sans"}
-          fontWeight={"bold"}
-          color={useColorModeValue("gray.700", "gray.50")}
-        >
-          Project
-        </chakra.h3>
-      </Box> */}
     </Flex>
   );
 }

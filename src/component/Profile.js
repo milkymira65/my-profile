@@ -6,32 +6,22 @@ export default function Profile() {
       <Center>
         <Image src="picture/bgprofile.png" shadow="xl" borderRadius="50px" />
       </Center>
-      <Flex w="30%" position="absolute">
+      <Flex w="20%" position="absolute">
         <Image src="picture/milklogo.png" position="relative" />
-        {/* <Text
-          className="milk"
-          position="absolute"
-          top="45%"
-          left="35%"
-          bottom="80%"
-          fontSize={[10, 20, 50]}
-          fontWeight="extrabold"
-          color="#735F32"
-        >
-          MILKY
-        </Text> */}
       </Flex>
 
       <Flex
-        w="80%"
+        // w="80%"
+        w={[700, 800, 1000]}
         h={[300, 400, 550, 650]}
+        // m="10%"
         shadow="xl"
         borderRadius="50px"
         direction={["column", "column", "row", "row"]}
         position="absolute"
         top={[
           // {[200, 230, 330, 400, 500, 600, 700, 800]}
-          200, 300, 350, 400, 500,
+          100, 150, 300, 400, 500,
         ]}
         bg="rgba(217, 220, 225, 0.4)"
       >
