@@ -12,7 +12,6 @@ import {
   chakra,
   useColorModeValue,
 } from "@chakra-ui/react";
-import GridBlurredBackdrop from "../child-element/inside-skill";
 
 export default function Experience() {
   return (
@@ -28,28 +27,27 @@ export default function Experience() {
         <Flex
           w={[700, 800, 1000]}
           h={[200, 300, 400, 500, 1500, 1600]}
-          //   shadow="xl"
           borderRadius="50px"
           position="absolute"
-          top={[4000, 4050, 4500]}
-          //   bg="rgba(217, 220, 225, 0.4)"
-          mt="-5%"
+          // top={[3000, 3500, 3800, 4000, 4050, 4500]}
+
+          // bg="rgba(217, 220, 225, 0.4)"
+          mt="10%"
         >
           <Center>
             <Box
               maxW={[600, 700, 800, 1000, 1200]}
               h="90%"
               w={"full"}
-              borderRadius="500px"
+              borderRadius="2%"
               boxShadow={"2xl"}
-              rounded={"md"}
+              // rounded={"md"}
               p={10}
               mt="-10%"
               overflow={"hidden"}
             >
               <Stack mb="5%">
                 <chakra.h3
-                  // py={[5, 10, 20]}
                   fontSize={30}
                   fontFamily={"Work Sans"}
                   fontWeight={"bold"}
@@ -57,12 +55,11 @@ export default function Experience() {
                   ml="40%"
                   mb={"3%"}
                 >
-                  Work Experience
+                  <h2 id="Work Experience">Work Experience</h2>
                 </chakra.h3>
                 <Heading
-                  // eslint-disable-next-line react-hooks/rules-of-hooks
                   color={useColorModeValue("gray.700", "white")}
-                  fontSize={"3xl"}
+                  fontSize={"2xl"}
                   fontFamily={"body"}
                 >
                   Backend developer March 2023 - Now ITTHIRIT TECHNOLOGY
@@ -75,9 +72,8 @@ export default function Experience() {
               </Stack>
               <Stack mb="5%">
                 <Heading
-                  // eslint-disable-next-line react-hooks/rules-of-hooks
                   color={useColorModeValue("gray.700", "white")}
-                  fontSize={"3xl"}
+                  fontSize={"2xl"}
                   fontFamily={"body"}
                 >
                   Personal BusinessJuly 2021- January 2022{" "}
@@ -96,9 +92,8 @@ export default function Experience() {
               </Stack>
               <Stack mb="5%">
                 <Heading
-                  // eslint-disable-next-line react-hooks/rules-of-hooks
                   color={useColorModeValue("gray.700", "white")}
-                  fontSize={"3xl"}
+                  fontSize={"2xl"}
                   fontFamily={"body"}
                 >
                   March2015 - 2021 other work country
@@ -110,9 +105,8 @@ export default function Experience() {
               </Stack>
               <Stack mb="5%">
                 <Heading
-                  // eslint-disable-next-line react-hooks/rules-of-hooks
                   color={useColorModeValue("gray.700", "white")}
-                  fontSize={"3xl"}
+                  fontSize={"xl"}
                   fontFamily={"body"}
                 >
                   Salesperson life insurance June2014-March2015
@@ -139,41 +133,102 @@ export default function Experience() {
             </Box>
           </Center>
         </Flex>
+
+        <Flex
+          w={[700, 800, 1000]}
+          h={[200, 300, 400, 500, 600]}
+          borderRadius="50px"
+          position="absolute"
+          top={[5500, 6000, 6100]}
+          // bg="rgba(217, 220, 225, 0.4)"
+          mt="-5%"
+        >
+          <Center>
+            <Box
+              maxW={[600, 700, 800, 1000, 1200]}
+              h="90%"
+              w={"full"}
+              borderRadius="10%"
+              boxShadow={"2xl"}
+              // rounded={"md"}
+              p={10}
+              mt={["-100%", "-20%"]}
+              overflow={"hidden"}
+              bg="rgba(217, 220, 225, 0.4)"
+            >
+              <Stack mb="5%">
+                <chakra.h3
+                  fontSize={30}
+                  fontFamily={"Work Sans"}
+                  fontWeight={"bold"}
+                  color="#735F32"
+                  ml="40%"
+                  mb={"3%"}
+                >
+                  Hobbies
+                </chakra.h3>
+                <Text
+                  color={useColorModeValue("gray.700", "white")}
+                  fontSize={[10, 15, 20]}
+                  fontFamily={"body"}
+                >
+                  Drawing Designing Read a book listen to music Swimming Go for
+                  a walk Find nice Food Gardening, farming Cooking Coding ETC
+                </Text>
+              </Stack>
+              <Stack mb="5%">
+                <chakra.h3
+                  // py={[5, 10, 20]}
+                  fontSize={30}
+                  fontFamily={"Work Sans"}
+                  fontWeight={"bold"}
+                  color="#735F32"
+                  ml="40%"
+                  mb={"3%"}
+                >
+                  Contact
+                </chakra.h3>
+
+                <Box
+                  as="a"
+                  href="tawanaornnutcha@gmail.com"
+                  fontSize={[15, 20]}
+                >
+                  {" "}
+                  Email : TawanaOrnnutcha@gmail.com{" "}
+                </Box>
+
+                <Box fontSize={[15, 20]}>
+                  <a href="tel:0826200871">Tel: 0826200871</a>
+                </Box>
+                {/* </p> */}
+
+                <Box
+                  as="a"
+                  href="https://github.com/milkymira65"
+                  fontSize={[15, 20]}
+                >
+                  {" "}
+                  Git Hub : Milk Ornnutcha{" "}
+                </Box>
+                <Box
+                  as="a"
+                  href="https://www.linkedin.com/in/ornnutcha-tawana-292b39251"
+                  fontSize={[15, 20]}
+                >
+                  {" "}
+                  Linkedin : ornnutcha-tawana{" "}
+                </Box>
+                <Box as="a" href="#" fontSize={[15, 20]}>
+                  {" "}
+                  Address: 40 Moo 5, San Sai Subdistrict, Saraphi District,
+                  Chiang Mai Province 50140
+                </Box>
+              </Stack>
+            </Box>
+          </Center>
+        </Flex>
       </Center>
-
-      <Flex
-        w={[700, 800, 1000]}
-        h={[200, 300, 400, 500, 600]}
-        shadow="xl"
-        borderRadius="50px"
-        position="absolute"
-        top={[5400, 5500, 5950]}
-        // mt="90%"
-        bg="rgba(217, 220, 225, 0.4)"
-      >
-        <Box
-          ml="40%"
-          py={[5, 10]}
-          fontSize={30}
-          fontFamily={"Work Sans"}
-          fontWeight={"bold"}
-          color="#735F32"
-        >
-          HOBBIES
-        </Box>
-
-        {/* <Box
-         ml="40%"
-       
-          // py={[5, 10, 20]}
-          fontSize={30}
-          fontFamily={"Work Sans"}
-          fontWeight={"bold"}
-          color="#735F32"
-        >
-          Contact
-        </Box> */}
-      </Flex>
     </Flex>
   );
 }

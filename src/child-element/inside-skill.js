@@ -128,7 +128,7 @@ export default function GridBlurredBackdrop() {
           fontWeight={"bold"}
           color="#735F32"
         >
-          Skills
+          <h2 id="Skills">Skills</h2>
         </chakra.h3>
       </Box>
       <SimpleGrid

@@ -55,7 +55,7 @@ export function EducationInsite() {
               _hover={{ bg: "white", fontSize: "20", color: "#DBA39A" }}
               w="fit-content"
             >
-              Education
+              <h2 id="Education">Education</h2>
             </Button>
           </PopoverTrigger>
           <PopoverContent
@@ -65,9 +65,12 @@ export function EducationInsite() {
           >
             <PopoverArrow />
             <PopoverCloseButton />
-            <PopoverHeader fontSize="2xl" w="970px" fontWeight="bold" m="20px">
-              Education
-            </PopoverHeader>
+            <PopoverHeader
+              fontSize="2xl"
+              w="970px"
+              fontWeight="bold"
+              m="20px"
+            ></PopoverHeader>
             <PopoverBody w="1000px">
               <Tabs isLazy colorScheme="green">
                 <TabList>

@@ -20,22 +20,22 @@ import {
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 
-const Links = ["Education", "Skills", "Experiences"];
+// const Links = ["Education", "Skills", "Experiences"];
 
-const NavLink = ({ children }) => (
-  <Link
-    px={2}
-    py={1}
-    rounded={"md"}
-    _hover={{
-      textDecoration: "none",
-      bg: useColorModeValue("#FDE2E2", "#8D72E1"),
-    }}
-    href={"#"}
-  >
-    {children}
-  </Link>
-);
+// const NavLink = ({ children }) => (
+//   <Link
+//     px={2}
+//     py={1}
+//     rounded={"md"}
+//     _hover={{
+//       textDecoration: "none",
+//       bg: useColorModeValue("#FDE2E2", "#8D72E1"),
+//     }}
+//     href={["#Education", "#Skills", "#Experiences"]}
+//   >
+//     {children}
+//   </Link>
+// );
 
 export default function Nav() {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -56,8 +56,46 @@ export default function Nav() {
             <Text className="profile" fontSize="xl">
               Ornnutcha Tawana
             </Text>
+            <Button
+              _hover={{
+                bg: "#FFCCCC",
+              }}
+              onClick={() => {}}
+            >
+              {" "}
+              <a href="#Education">Education</a>
+            </Button>
+            <Button
+              _hover={{
+                bg: "#FFCCCC",
+              }}
+              onClick={() => {}}
+            >
+              {" "}
+              <a href="#Skills">Skills</a>
+            </Button>
+            <Button
+              _hover={{
+                bg: "#FFCCCC",
+              }}
+              onClick={() => {
+                // alert("clicked");
+              }}
+            >
+              {" "}
+              <a href="#Work Experience">Experience</a>
+            </Button>
 
-            <HStack
+            {/* <Button
+              onClick={() => {
+                // alert("clicked");
+              }}
+            >
+              {" "}
+              <a href="#Skills">Skills</a>
+            </Button> */}
+
+            {/* <HStack
               as={"nav"}
               spacing={2}
               display={{ base: "none", md: "flex" }}
@@ -65,7 +103,7 @@ export default function Nav() {
               {Links.map((link) => (
                 <NavLink key={link}>{link}</NavLink>
               ))}
-            </HStack>
+            </HStack>*/}
           </HStack>
 
           <Flex alignItems={"center"} mr="5%">
@@ -91,7 +129,7 @@ export default function Nav() {
             </Menu>
           </Flex>
         </Flex>
-
+        {/* 
         {isOpen ? (
           <Box pb={4} display={{ md: "none" }}>
             <Stack as={"nav"} spacing={4}>
@@ -100,7 +138,7 @@ export default function Nav() {
               ))}
             </Stack>
           </Box>
-        ) : null}
+        ) : null} */}
       </Box>
     </>
   );

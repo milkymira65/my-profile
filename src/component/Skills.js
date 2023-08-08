@@ -35,7 +35,8 @@ export default function Skills() {
           bg="rgba(217, 220, 225, 0.4)"
         >
           <Box
-            // py={[5, 10, 20]}
+            py={[5, 10]}
+            ml="45%"
             fontSize={30}
             fontFamily={"Work Sans"}
             fontWeight={"bold"}
